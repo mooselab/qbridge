@@ -1,0 +1,46 @@
+dataset:
+  # split_ratio: [0.8, 0.1, 0.1]
+  # split_ratio: [0.9, 0.1, 0.0]
+  split_ratio: [0, 0, 1.0]
+
+model:
+  name: g-bridge
+  d_node: 61
+  d_edge: 5
+  embed_dim: 256
+  num_heads: 8
+  num_layers: 4
+  ffn_dim: 512
+  dropout: 0.1
+  attn_dropout: 0.1
+  pre_layernorm: true
+  restrict_to_edges: false
+  share_edge_bias_across_heads: false
+  add_cls_token: false
+  # true=turn on, false=turn off, edge-conditioned attention
+  use_edge_bias: true
+  # true=turn on FiLM head; false=turn off head         
+  use_film: true              
+  num_backends: 23
+  # num_backends: 19
+  backend_embed_dim: 16
+
+
+num_epochs: 1000
+batch_size: 2
+accum_steps: 10
+
+criterion:
+  name: mse
+
+optimizer:
+  name: adam
+  lr: 5.0e-4
+  weight_decay: 1.0e-4
+
+scheduler:
+  name: constant
+
+pdb: False
+
+device: gpu

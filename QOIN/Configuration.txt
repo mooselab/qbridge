@@ -1,0 +1,63 @@
+ID: 5
+FORMAT: binary
+START: 1
+END: 3
+PERCENTAGE: 1
+REGEX: None
+--------------------
+ID: 1
+FORMAT: int
+START: 1
+END: 4
+PERCENTAGE: 1
+REGEX: None
+--------------------
+ID: 0
+FORMAT: binary
+START: 1
+END: 4
+PERCENTAGE: 1
+REGEX: None
+--------------------
+ID: 2
+FORMAT: int
+START: 5
+END: 8
+PERCENTAGE: 1
+REGEX: None
+--------------------
+ID: 3
+FORMAT: binary
+START: 1
+END: 4
+PERCENTAGE: 1
+REGEX: None
+--------------------
+ID: 8
+FORMAT: expression
+START: 3
+END: 3
+PERCENTAGE: 1
+REGEX: ~?a[&\^]{1}~?b[&\^]{1}~?c
+--------------------
+ID: 6
+FORMAT: binary
+START: 1
+END: 5
+PERCENTAGE: 1
+REGEX: None
+--------------------
+ID: 4
+FORMAT: int
+START: 3
+END: 7
+PERCENTAGE: 1
+REGEX: None
+--------------------
+ID: 7
+FORMAT: binary
+START: 1
+END: 3
+PERCENTAGE: 1
+REGEX: None
+--------------------
