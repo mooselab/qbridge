@@ -1,8 +1,8 @@
 ## Preparation
-conda env create -f environment.yml
-conda activate qbridge
-pip install -r requirements-ml.txt
-export TF_USE_LEGACY_KERAS=True
+- conda env create -f environment.yml
+- conda activate qbridge
+- pip install -r requirements-ml.txt
+- export TF_USE_LEGACY_KERAS=True
 
 ## QOIN
 
