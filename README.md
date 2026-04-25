@@ -68,16 +68,17 @@ For Q-Bridge **general model**:
 - Run `finetune_full_model.sh` for finetuning  
 - Run `test_full_model.sh` for testing 
 
-## larger_circuits
-- Run `python larger_circuits/BaselineTuner.py` to generate circuits for finetuning and testing.
-- Run `python larger_circuits/EvaluationRQ1.py` to generate datasets for finetuning and testing.  
-- Refer to `transformer` for finetuning and testing model
 
 ### setting
 - Remove Edge-Biased Attention: ./transformer/config.yaml -> use_edge_bias: false
 - Remove FiLM: ./transformer/config.yaml -> use_film: false
 - Remove backend embedding: replace 'import model' with 'import model_v2' for all the files
 - Add qubit multi-hot: replace 'import circuit_dag_converter_v2' with 'import circuit_dag_converter' for all the files
+
+## larger_circuits
+- Run `python larger_circuits/BaselineTuner.py` to generate circuits for finetuning and testing.
+- Run `python larger_circuits/EvaluationRQ1.py` to generate datasets for finetuning and testing.  
+- Refer to `transformer` for finetuning and testing model
 
 
 
