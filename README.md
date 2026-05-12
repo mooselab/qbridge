@@ -61,12 +61,12 @@ For Q-Bridge **general model**:
 
 
 ## ablation study
-For Q-Bridge **backend-wise model**:  
+### For Q-Bridge **backend-wise model**:  
 - Run `pretrain_ablation.sh` for pretraining  
 - Run `finetune_ablation.sh` for finetuning  
 - Run `test_ablation.sh` for testing  
 
-For Q-Bridge **general model**:  
+### For Q-Bridge **general model**:  
 - Run `pretrain_full_model.sh` for pretraining  
 - Run `finetune_full_model.sh` for finetuning  
 - Run `test_full_model.sh` for testing 
