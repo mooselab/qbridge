@@ -4,6 +4,9 @@
 - pip install -r requirements-ml.txt
 - export TF_USE_LEGACY_KERAS=True
 
+## Discussion.pdf
+- Full discussion of the paper
+
 ## QOIN
 
 The code in the `QOIN` folder is copied and revised from the paper *Mitigating Noise in Quantum Software Testing Using Machine Learning* ([link](https://github.com/AsmarMuqeet/QOIN/tree/v1)).
